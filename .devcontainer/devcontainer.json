@@ -1,6 +1,12 @@
 {
-	"name": "Java & PostgreSQL",
-	"service": "dev-container-ij",
+	"name": "Java & PostgreSQL - DEV Container Test - Environment",
 	"dockerComposeFile": "docker-compose.yml",
-	"workspaceFolder": "/home/leonardo/Projetos/leonardo/dev-container-ij"
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "forwardPorts": [5432],
+  "customizations" : {
+    "jetbrains" : {
+      "backend" : "IntelliJ"
+    }
+  },
 }
